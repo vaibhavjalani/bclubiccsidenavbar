@@ -14,11 +14,16 @@
         <style>
             
             /* The sidebar menu */
+          
           #sidenav {
-            height: 100%; /* Full-height: remove this if you want "auto" height */
-            position: fixed; /* Fixed Sidebar (stay in place on scroll) */ 
+            height:100%;
+            width:4vw;
+            position:relative; /* Full-height: remove this if you want "auto" height */
+             /* Fixed Sidebar (stay in place on scroll) */ 
             background-color:#111; /* Black */
             padding-top:14vw;
+            padding-bottom:15vw;
+            z-index: initial;
           }
           
           /* The navigation menu links */
@@ -28,7 +33,6 @@
             color: grey;
             display:block;
             text-decoration: none;
-           
           }
         
           /* When you mouse over the navigation links, change their color */
@@ -38,7 +42,7 @@
           }
           #sidenav a:hover .slidetext
           {
-            margin-left:1vw;
+            margin-left:1.25vw;
           }
           #sidenav a i
           {
@@ -48,20 +52,30 @@
           {
             transform:rotate(360deg);
           }
-          /* #sidenav a .icons
-          {
-            z-index:50000000 !important;
-          } */
           #sidenav a .slidetext
           {
-            position:absolute;
+            position:fixed;
             color:grey;
             background-color:#111;
-            padding:0.1vw;
-            margin-left:-9vw;
-            transition:0.8s;
+            padding:0.1vw 0.3vw 0.1vw 0.3vw;
+            margin-left:-6vw;
+            transition:0.5s;
+            z-index:-1;
           }
-          
+         
+          .slidetext
+          {
+            z-index:-10;
+          }
+          #sidenavwrap
+          {
+            position:fixed;
+            z-index:10;
+          }
+          .mainbody
+          {
+            padding-left:5vw;
+          }
         </style>
 
 
@@ -73,14 +87,73 @@
 
 
  <!-- Side navigation -->
+<div id="sidenavwrap"> 
 <div id="sidenav">
     <a href="#"><i class='bx bx-plus icons'></i><span class="slidetext">About</span></a>
     <a href="#"><i class='bx bxl-visual-studio icons' ></i><span class="slidetext">Visual</span></a>
     <a href="#"><i class='bx bxl-discord-alt icons' ></i><span class="slidetext">Discord</span></a>
     <a href="#"><i class='bx bxl-unity icons' ></i><span class="slidetext">Unity</span></a>
 </div>
-  
+</div>  
 
-
-
+<div class="mainbody">
+ Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+ Voluptas cupiditate vitae quae deserunt accusamus, incidunt ipsum sunt repellendus. 
+ Tempora nesciunt fugiat modi tenetur autem repudiandae? Sint quo placeat similique vel, 
+ officiis perspiciatis consequuntur? Facere repellat rerum, alias iusto, numquam pariatur tempore, 
+ corrupti velit placeat totam laudantium natus. Veniam eveniet in odit placeat reprehenderit totam n
+ ulla perspiciatis. Sint fugiat voluptates temporibus, consequatur saepe sequi perspiciatis facilis excepturi 
+ reiciendis possimus consequuntur perferendis eius voluptatum similique. Laborum cumque doloremque, numquam quos 
+ ad labore? Similique eos, necessitatibus repellendus dolor doloribus architecto ipsam accusamus, inventore delectus 
+ enim sunt voluptatum ratione. Eos minus fugiat assumenda, cumque omnis at reiciendis atque expedita ducimus, 
+ maiores quis? Maxime reiciendis nihil, iure impedit voluptatum possimus corrupti quisquam consequuntur 
+ accusantium vitae quo doloribus temporibus ullam! Ut veritatis necessitatibus, dolorem libero assumenda vero 
+ autem saepe voluptatum molestias blanditiis. Temporibus placeat provident, praesentium expedita maxime 
+ reprehenderit et. Atque consectetur eos minus sunt ipsum, possimus ut mollitia sapiente magnam libero 
+ deserunt voluptatum explicabo! Iusto dicta omnis quidem commodi quis, praesentium labore expedita? 
+ Tempore blanditiis sint, suscipit, accusantium ad at assumenda nam eius esse eum, expedita ipsa. 
+ Esse ullam, quam perferendis veritatis eius similique reiciendis. Ut, dolorem vero veniam a reiciendis, 
+ maiores omnis provident porro accusamus et ipsa perferendis iusto quas hic ipsam quasi quisquam animi. 
+ Repudiandae architecto, labore laboriosam dolorem iste asperiores atque eum, exercitationem vitae minima 
+ reprehenderit delectus quas, doloribus sint. Architecto ullam quidem iusto, pariatur at molestiae dolorem 
+ explicabo minima consectetur dolorum nisi ipsum saepe consequuntur quae hic aut repellendus quasi doloremque
+  deserunt optio. Nemo ut dolorum veniam quisquam alias inventore quas dolorem molestiae beatae, quis odit facilis 
+  praesentium sequi vitae impedit dolore quasi libero laudantium consequuntur? Eligendi quod vitae, fuga laboriosam, s
+  aepe odio commodi nobis molestias deserunt ipsam illo voluptate distinctio dolor? Praesentium voluptatem autem 
+  minima at, voluptas quis? Officia accusamus possimus facilis, delectus pariatur sapiente perferendis ea quo, 
+  numquam dignissimos laudantium temporibus voluptas culpa nihil voluptates impedit repudiandae, enim autem est 
+  nemo nesciunt sequi eius. Explicabo quidem itaque suscipit repudiandae expedita vero nobis magni dicta in, 
+  consequatur veritatis soluta, nisi odio quaerat nam consequuntur placeat magnam adipisci nemo. Recusandae 
+  officiis, neque ea earum quidem mollitia accusantium. Ipsam natus quibusdam inventore exercitationem amet 
+  perspiciatis iure, nemo iusto suscipit necessitatibus repellendus quod sunt nam aliquam maiores nulla ea 
+  quaerat debitis. Pariatur ab quasi ipsum unde ipsam aut sed in! Temporibus quibusdam vero sit atque eaque, 
+  suscipit non hic nihil pariatur, soluta repellendus, possimus eligendi vel animi beatae illo saepe distinctio 
+  minus recusandae voluptas enim explicabo aspernatur? Expedita possimus maxime minima repudiandae quas 
+  quibusdam quo? Nemo amet consectetur saepe illo quidem necessitatibus? Quod facere cumque voluptatum 
+  eaque quibusdam voluptates reiciendis esse praesentium voluptatibus vel? Accusamus cum architecto 
+  corporis est nemo sequi ipsum. Consequatur sapiente repudiandae quos similique repellendus cumque, 
+  eos voluptatem quo fuga explicabo voluptas doloremque quaerat quod possimus. Animi aut quibusdam 
+  quam facere vero. Sed deserunt totam doloribus quidem dolorem error in quaerat soluta quisquam sint. 
+  Saepe incidunt dolore aperiam rerum eos laudantium nesciunt quia. Vero voluptatum quam, tempore iusto 
+  ullam in repellendus similique corrupti culpa qui nostrum necessitatibus sit adipisci fugit atque 
+  perspiciatis deserunt omnis? Nam quos est quam voluptatibus corporis ut repudiandae? Soluta voluptate 
+  iste cupiditate atque ratione veritatis id optio et temporibus rerum, velit excepturi facilis corporis 
+  exercitationem sapiente autem ullam nemo aperiam vitae harum ab perspiciatis labore similique? Itaque ab 
+  numquam unde nesciunt labore eum voluptates cumque! Rem, modi voluptate molestiae asperiores porro aliquid 
+  quam laboriosam, perspiciatis magnam libero, quia ea temporibus doloremque fuga tempora numquam adipisci. 
+  Facilis cum mollitia nesciunt voluptates esse obcaecati aspernatur magni nisi eligendi est ipsa voluptatibus 
+  aut, debitis neque eos earum soluta laborum impedit numquam. Commodi facere reprehenderit ab impedit vitae 
+  rem quas repudiandae saepe ipsam ea aut tenetur, laborum iure, amet doloribus? Eligendi aut aliquid reprehenderit
+   recusandae molestias soluta delectus ea voluptatem laudantium quae. Consequatur nisi impedit earum assumenda velit 
+   eveniet dolorum, a deleniti deserunt distinctio ad at ut perferendis aperiam cumque ratione optio iusto aliquam modi
+    fuga autem officia, quaerat adipisci! Doloremque eveniet necessitatibus debitis voluptas sit adipisci eos sint 
+    soluta fuga saepe quas, quaerat sunt molestiae? Et repudiandae est voluptas doloribus voluptatibus, dignissimos 
+    provident maxime dolores magnam dolorem! Expedita necessitatibus facere pariatur voluptatem, quisquam, aut 
+    voluptatum et natus, magni dolorum ab ratione ad unde adipisci commodi quos dolorem? Accusamus, dolorum non! 
+    Exercitationem modi ipsam accusamus expedita ipsa voluptate sit, libero praesentium! Corporis quam et magnam non.
+     Consequatur similique tempore optio odit vitae obcaecati minima dignissimos perspiciatis illum placeat? Ad corporis 
+     saepe eaque sint officiis esse sapiente quisquam voluptatem animi quaerat ut iusto, dolore cupiditate enim ab molestias 
+     dicta reprehenderit velit ea distinctio, doloribus accusantium. Soluta maiores provident aspernatur nesciunt voluptate ipsum, 
+     nihil omnis recusandae possimus libero impedit, vel error magni maxime nostrum ea fuga eligendi officia totam quidem amet eveniet.
+</div>
 </body>
