@@ -27,8 +27,8 @@
             font-size: 1.8vw;
             color: grey;
             display:block;
-            /* transition:transform 0.8s; */
             text-decoration: none;
+           
           }
         
           /* When you mouse over the navigation links, change their color */
@@ -36,7 +36,23 @@
             color: #f1f1f1;
             /* transform:rotate(360deg); */
           }
-          .slidetext
+          #sidenav a:hover .slidetext
+          {
+            margin-left:1vw;
+          }
+          #sidenav a i
+          {
+            transition: transform 0.8s;
+          }
+          #sidenav a:hover i
+          {
+            transform:rotate(360deg);
+          }
+          /* #sidenav a .icons
+          {
+            z-index:50000000 !important;
+          } */
+          #sidenav a .slidetext
           {
             position:absolute;
             color:grey;
@@ -45,24 +61,7 @@
             margin-left:-9vw;
             transition:0.8s;
           }
-          #sidenav a:hover .slidetext
-          {
-            margin-left:1vw;
-          }
-          #sidenav a i
-          {
-            z-index:10000;
-            transition:0.8s;
-          }
-          #sidenav a:hover i
-          {
-            z-index:10000;
-            transform:rotate(360deg);
-          }
-          span
-          {
-            z-index:0;
-          }
+          
         </style>
 
 
