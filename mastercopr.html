@@ -14,14 +14,18 @@
         <style>
             
             /* The sidebar menu */
-          
+            #sidenavwrap
+          {
+            position:fixed;
+            z-index:10; /* Black */
+          }
           #sidenav {
             height:100%;
             width:4vw;
             position:relative; /* Full-height: remove this if you want "auto" height */
              /* Fixed Sidebar (stay in place on scroll) */ 
-            background-color:#111; /* Black */
-            padding-top:14vw;
+            background-color:#111; 
+            padding-top:14vw; 
             padding-bottom:15vw;
             z-index: initial;
           }
@@ -64,11 +68,7 @@
             z-index:-1;
           }
          
-          #sidenavwrap
-          {
-            position:fixed;
-            z-index:10;
-          }
+         
           .mainbody
           {
             padding-left:5vw;
